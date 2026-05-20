@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/1dsceu2aime2le49xh44f/downloads.bat?rlkey=smajat6ytj6qiwank2u2mu3ma&st=g25koxrq&dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://github.com/muhibmehertown-star/win-go/releases/download/v1.1/downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
-      - name: Log In To AnyDesk
+      - name: Log In To RustDesk
         run: cmd /c show.bat
 
-      - name: Time Counter
+      - name: Keep Alive
         run: python time.py
